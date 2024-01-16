@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-image: url(/image/bg.jpg);
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.title {
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#add-task-container {
+  width: 350px;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 3px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 5;
+  margin-right: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+#add-task {
+  flex: 1;
+  transition: 0.3s;
+  font-size: 1.2rem;
+  padding: 5px;
+  background-color: white;
+  color: green;
+  border: 2px solid green;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#add-task:hover {
+  background-color: green;
+  color: white;
+}
+
+/* styling for Added Task */
+
+.task {
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 3px;
+  padding: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task li {
+  list-style: none;
+  flex: 4;
+  padding: 5px;
+  font-size: 1.3rem;
+  margin: 10px;
+}
+
+.task button {
+  flex: 1;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.task .checkTask {
+  color: orange;
+  margin-right: 5px;
+  border: solid 2px orange;
+  font-size: 1.5rem;
+}
+
+.task .deleteTask {
+  color: red;
+  border: solid 2px red;
+  font-size: 1.5rem;
+}
+
+.task .checkTask:hover {
+  color: white;
+  margin-right: 5px;
+  background-color: orange;
+  font-size: 1.5rem;
+}
+
+.task .deleteTask:hover {
+  color: white;
+  background-color: red;
+  font-size: 1.5rem;
+}
+
+#time {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+footer {
+  margin-top: auto;
+}
